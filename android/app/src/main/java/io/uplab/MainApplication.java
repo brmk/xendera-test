@@ -1,4 +1,4 @@
-package com.hello;
+package io.uplab.xenderatest;
 
 import android.app.Application;
 

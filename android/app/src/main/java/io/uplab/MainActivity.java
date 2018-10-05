@@ -1,4 +1,4 @@
-package com.hello;
+package io.uplab.xenderatest;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "hello";
+        return "xenderatest";
     }
 }

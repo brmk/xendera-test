@@ -3,6 +3,7 @@
 Node: v9.2.1
 React v16.5.0,
 React Native: v0.57.1
+Java SE 8
 
 ## Install
 
