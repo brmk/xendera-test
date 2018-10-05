@@ -1,0 +1,45 @@
+{
+  "name": "xendera-test",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "ios": "open ios/XenderaTest.xcworkspace",
+    "android": "react-native run-android",
+    "build-android": "cd android && ./gradlew assembleRelease && open ./app/build/outputs/apk && cd ../",
+    "reverse": "adb reverse tcp:8081 tcp:8081 && adb reverse tcp:5678 tcp:5678",
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.19.4",
+    "prop-types": "^15.6.0",
+    "react": "16.5.0",
+    "react-native": "0.57.1",
+    "react-native-i18n": "^2.0.9",
+    "react-native-maps": "^0.21.0",
+    "react-navigation": "^2.17.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.1.2",
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.47.1",
+    "react-test-renderer": "16.5.0",
+    "babel-eslint": "^8.2.6",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^5.2.0",
+    "eslint-plugin-react": "^7.10.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "resources/fonts"
+    ]
+  }
+}
