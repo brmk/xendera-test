@@ -44,6 +44,7 @@ target 'XenderaTest' do
   # react-native-maps dependencies end
 
   pod 'RNI18n', :path => '../node_modules/react-native-i18n'
+  pod 'react-native-fast-image', :path => '../node_modules/react-native-fast-image'
 end
 
 post_install do |installer|

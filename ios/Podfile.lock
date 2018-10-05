@@ -1,6 +1,7 @@
 PODS:
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.6)
+  - FLAnimatedImage (1.0.12)
   - Folly (2016.10.31.00):
     - boost-for-react-native
     - DoubleConversion
@@ -29,6 +30,11 @@ PODS:
     - GoogleMaps/Base
   - React (0.57.1):
     - React/Core (= 0.57.1)
+  - react-native-fast-image (5.0.10):
+    - FLAnimatedImage
+    - React
+    - SDWebImage/Core
+    - SDWebImage/GIF
   - react-native-google-maps (0.21.0):
     - Google-Maps-iOS-Utils (= 2.1.0)
     - GoogleMaps (= 2.5.0)
@@ -82,6 +88,10 @@ PODS:
     - React/RCTBlob
   - RNI18n (2.0.15):
     - React
+  - SDWebImage/Core (4.4.2)
+  - SDWebImage/GIF (4.4.2):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
   - yoga (0.57.1.React)
 
 DEPENDENCIES:
@@ -90,6 +100,7 @@ DEPENDENCIES:
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - Google-Maps-iOS-Utils
   - GoogleMaps
+  - react-native-fast-image (from `../node_modules/react-native-fast-image`)
   - react-native-google-maps (from `../node_modules/react-native-maps`)
   - react-native-maps (from `../node_modules/react-native-maps`)
   - React/Core (from `../node_modules/react-native`)
@@ -111,8 +122,10 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - boost-for-react-native
+    - FLAnimatedImage
     - Google-Maps-iOS-Utils
     - GoogleMaps
+    - SDWebImage
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -123,6 +136,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
+  react-native-fast-image:
+    :path: "../node_modules/react-native-fast-image"
   react-native-google-maps:
     :path: "../node_modules/react-native-maps"
   react-native-maps:
@@ -135,16 +150,19 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   Folly: c89ac2d5c6ab169cd7397ef27485c44f35f742c7
   glog: e8acf0ebbf99759d3ff18c86c292a5898282dcde
   Google-Maps-iOS-Utils: c32891ff472eaaa1fca032beedafa1a013af7875
   GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
   React: 1fe0eb13d90b625d94c3b117c274dcfd2e760e11
+  react-native-fast-image: cba3d9bf9c2cf8ddb643d887a686c53a5dd90a2c
   react-native-google-maps: 2cfe3b01f8422c7dae51d8764139fd70f888cfce
   react-native-maps: 066c2afcc89e18726377bcc685315f989ca22449
   RNI18n: 46b8694063fbd699f2c06a4dc8e835b3176763b1
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: 3918a97863a8d43df311eb30695980d1e3470b31
+PODFILE CHECKSUM: 6a96cc0eb660fbe01dea5d5fcda8910e180b22a9
 
 COCOAPODS: 1.5.3
