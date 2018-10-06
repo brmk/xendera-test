@@ -1,12 +1,13 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, WebView } from 'react-native';
 import { ImageMarker } from 'app/components';
-import MapView, { Marker } from 'react-native-maps';
+import MapView from 'react-native-maps';
 import styles from './styles';
 
 
 const PartnersMap = (props)=>{
-  const { userLocation, markers } = props;
+  const { userLocation, markers, ready } = props;
+  
   return (
     <View style ={styles.container}>
       {/*
@@ -22,13 +23,10 @@ const PartnersMap = (props)=>{
           style={styles.map}
           initialRegion={userLocation}
         > 
-          { markers.map((marker) => (
-            <Marker key={marker.image} coordinate={marker.coordinate}>
-              <ImageMarker image={marker.image} />
-            </Marker>
-          ))}
+          { markers.map(marker => <ImageMarker key={marker.image} {...marker} /> )}
         </MapView>
       }
+      
     </View>
   )
 } 
