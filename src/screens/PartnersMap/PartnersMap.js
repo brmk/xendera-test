@@ -1,12 +1,12 @@
 import React from 'react';
-import { View, WebView } from 'react-native';
+import { View } from 'react-native';
 import { ImageMarker } from 'app/components';
 import MapView from 'react-native-maps';
 import styles from './styles';
 
 
 const PartnersMap = (props)=>{
-  const { userLocation, markers, ready } = props;
+  const { userLocation, markers } = props;
   
   return (
     <View style ={styles.container}>
@@ -16,7 +16,7 @@ const PartnersMap = (props)=>{
             <Image source={{uri: marker.image }} style={{height:50,width:50}}/>
           </View>
         ))
-        */}
+      */}
       {
         <MapView
           provider={MapView.PROVIDER_GOOGLE}
@@ -26,7 +26,6 @@ const PartnersMap = (props)=>{
           { markers.map(marker => <ImageMarker key={marker.image} {...marker} /> )}
         </MapView>
       }
-      
     </View>
   )
 } 
