@@ -2,6 +2,7 @@ import React from 'react';
 import FastImage from 'react-native-fast-image'
 import styles from './styles';
 
+
 const ImageMarker = ({ image })=>{
   return (
     <FastImage 
