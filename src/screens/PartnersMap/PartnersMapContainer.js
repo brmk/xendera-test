@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PartnersMap from './PartnersMap';
 import { PSEUDO_USER_LOCATION } from 'app/constants/globals';
 import markers from 'app/constants/markers';
-import FastImage from 'react-native-fast-image';
 
 class PartnersMapContainer extends Component {
   state = { ready: false }
@@ -14,7 +13,6 @@ class PartnersMapContainer extends Component {
 
   render() {
     const { ready } = this.state;
-
     return (
       <PartnersMap 
         userLocation={PSEUDO_USER_LOCATION} 

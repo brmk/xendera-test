@@ -8,17 +8,18 @@ class ImageMarkerContainer extends Component {
   }
 
   redrawMarker = () => {
-    console.log(this.marker)
     this.marker && this.marker.redraw();
-    // this.forceUpdate();
-    // this.marker._runCommand('redraw', []);
+  }
+
+  onError = (error) => {
+    console.log('Error loading', error);
   }
 
   render () {
     const { image, coordinate, ...rest } = this.props;
     return (
       <Marker coordinate={coordinate} {...rest} ref={this.setRef} tracksViewChanges={false}>
-        <ImageMarker image={image} redrawMarker={this.redrawMarker} />
+        <ImageMarker image={image} redrawMarker={this.redrawMarker} onError={this.onError} />
       </Marker>
     )
   }
