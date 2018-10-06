@@ -45,7 +45,7 @@ Java SE 8
 ### Android build prerequisites
 
 0. Install Android studio and react native dependencies
-1. Place the keystore file to the `./android/app` folder
+1. Place the keystore file to the `./android/app` folder. For the testing purposes you can generate it executing `keytool -genkey -v -keystore xendera-test.keystore -alias xendera-test -keyalg RSA -keysize 2048 -validity 10000`
 2. Append this code to the end of the file `~/.gradle/gradle.properties` replacing `<password>` with the password to the keystore:
 
 ```
