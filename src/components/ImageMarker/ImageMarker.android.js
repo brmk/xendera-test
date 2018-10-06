@@ -36,13 +36,13 @@ import styles from './styles';
 const ImageMarker = ({ image, onLoad, onError, hasError, loaded, title }) => {
   return (
     <View style={[
-      styles.markerImage, 
+      styles.markerImageContainer, 
       loaded ? styles.loaded : null, 
       hasError ? styles.hasError : null,
     ]}>
       <WebView
         originWhitelist={['*']}
-        style={styles.markerImageWebView}
+        style={styles.markerImage}
         // Renders marker
         // if there is an issue with the image, the component will load a placeholder
         source={{ 

@@ -9,7 +9,7 @@ const markers = [
   },
   {
     title: 'Intersport',
-    image: 'https://api.xendera.io/v1/assets/6c0c8df9-1644-4f27-86e7-9cbaa8c187dc',
+    image: 'https://api.xendera.io/v1/assets/6c0c8df9-1644-4f27-86e7-9cbaa8c187dca',
     coordinate: {
       latitude: 37.79225,
       longitude: -122.4324,

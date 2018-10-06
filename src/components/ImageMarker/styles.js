@@ -2,21 +2,23 @@ import { StyleSheet/*, Dimensions*/ } from 'react-native';
 
 // const {height, width} = Dimensions.get('window');
 
+const size = 60;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  markerImage: {
-    height: 60,
-    width: 60,
+  markerImageContainer: {
+    height: size,
+    width: size,
     backgroundColor: 'white',
     borderRadius: 10,
     overflow: 'hidden',
-    opacity: 0.7,
+    opacity: 0.3,
   },
-  markerImageWebView: {
-    height: 60,
-    width: 60,
+  markerImage: {
+    height: size,
+    width: size,
     backgroundColor: 'white',
   },
   hasError: {

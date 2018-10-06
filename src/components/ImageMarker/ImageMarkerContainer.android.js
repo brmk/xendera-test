@@ -5,6 +5,12 @@ import ImageMarker from './ImageMarker';
 class ImageMarkerContainer extends Component { 
   state = {
     loaded: false,
+    hasError: false,
+  }
+
+  anchor = {
+    x: 0.5, 
+    y: 0.5
   }
 
   setRef = (ref) => {
@@ -38,7 +44,7 @@ class ImageMarkerContainer extends Component {
     const { image, coordinate, ...rest } = this.props;
     const { loaded, hasError } = this.state;
     return (
-      <Marker coordinate={coordinate} {...rest} ref={this.setRef} tracksViewChanges={false}>
+      <Marker coordinate={coordinate} {...rest} ref={this.setRef} anchor={this.anchor} tracksViewChanges={false}>
         <ImageMarker 
           {...rest}
           image={image} 
