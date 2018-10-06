@@ -1,4 +1,4 @@
-package io.uplab.xenderatest;
+package com.xenderatest;
 
 import com.facebook.react.ReactActivity;
 
