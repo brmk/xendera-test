@@ -11,6 +11,8 @@ Java SE 8
 2. Run `npm i`
 3. iOS (optional) - Install cocoapods if not installed `sudo gem install cocoapods`
 4. iOS - Install pods `cd ios/ && pod install && cd ..`
+5. Replace `IOS_GOOGLE_MAPS_KEY` in `ios/XenderaTest/AppDelegate.m` with Google maps key for iOS.
+6. Replace `ANDROID_GOOGLE_MAPS_KEY` in `android/app/src/main/AndroidManifest.xml` with Google maps key for Android.
 
 ## Running
 
