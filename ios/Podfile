@@ -45,6 +45,8 @@ target 'XenderaTest' do
 
   pod 'RNI18n', :path => '../node_modules/react-native-i18n'
   pod 'react-native-fast-image', :path => '../node_modules/react-native-fast-image'
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
 end
 
 post_install do |installer|

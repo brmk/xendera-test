@@ -98,7 +98,7 @@ android {
     buildToolsVersion '26.0.2'
 
     defaultConfig {
-        applicationId "io.uplab.xenderatest"
+        applicationId "com.xenderatest"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -148,6 +148,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-splash-screen')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation 'com.facebook.react:react-native:+'
